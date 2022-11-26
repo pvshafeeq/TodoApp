@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 1px solid white;
+  margin-right: 7px;
+}
+
+.nav-item a:hover {
+  background-color: teal;
+  color: black !important;
+  transition: 0.5 ease-in-out;
+}
+
+.nav-item-active {
+  background-color: whitesmoke;
+  color: black !important;
+}
+
+#logo {
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius: 45%;
+}
+
+.loginForm {
+  padding: 40px;
+  border-radius: 15px;
+  width: 23rem;
+  border: 2px solid grey;
+}
