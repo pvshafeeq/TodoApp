@@ -9,7 +9,10 @@ body {
 
 .container {
   margin-top: 20px;
-  height: 100%;
+}
+
+.indexcontainer{
+ height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,8 +43,16 @@ body {
 }
 
 .loginForm {
-  padding: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 30px;
   border-radius: 15px;
   width: 23rem;
   border: 2px solid grey;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

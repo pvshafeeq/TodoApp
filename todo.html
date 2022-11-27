@@ -28,7 +28,8 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item active">
-          <a class="nav-link nav-item-active" href="todo.html">To do List</a>
+          <!-- <a class="nav-link nav-item-active" href="todo.html">To do List</a> -->
+          <a class="nav-link nav-item-active" href="javascript:;" onclick="loadapidata();">To do List</a>
         </li>
 
         <li class="nav-item active">
@@ -46,7 +47,7 @@
         <b>
           <div class="p-3 mb-2 bg-secondary text-white">My To Do List</div>
         </b>
-        <table id="tblData" class="table table-hover table-responsive">
+        <table id="tblData" class="table table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -61,7 +62,7 @@
   </div>
 
   <!-- Footer Start -->
-  <footer class="bg-secondary text-white">
+  <footer class="bg-secondary text-white mt-auto">
     <div class="container text-center text-white">
       <small>Copyright &copy; PVShafeeq</small>
     </div>
@@ -81,11 +82,5 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      loadapidata();
-    });
-  </script>
 </body>
-
 </html>
