@@ -64,7 +64,6 @@ const handleClick = (cb) => {
 }
 
 function marktodos(cb) {
-    debugger;
     handleClick(cb).then((cnt) => {
         showAlert(cnt);
     })
