@@ -1,21 +1,37 @@
 
-
 const loginvalidate = (callback) => {
     var isvalid = false;
+    var msg='';
     var username = document.getElementById('txtUsername').value.trim();
     var password = document.getElementById('txtPassword').value.trim();
     if (username == 'admin' && password == '12345') {
         isvalid = true;
     }
-    callback(isvalid);
+    else  if (username == '' && password == '')
+    {
+        msg='Username and Password cannot be blank..';
+    }
+    else  if (username == '')
+    {
+        msg='Username cannot be blank..';
+    }
+    else  if (password == '')
+    {
+        msg='Password cannot be blank..';
+    }
+    else
+    {
+        msg='Invalid credentials..';
+    }
+    callback(isvalid,msg);
 }
 
-function redirect(val) {
+function redirect(val,msg) {
     if (val == true) {
         window.location.href = 'todo.html';
     }
     else {
-        document.getElementById('errMessage').innerHTML = 'Invalid credentials..';
+        document.getElementById('errMessage').innerHTML = msg;
     }
 }
 
